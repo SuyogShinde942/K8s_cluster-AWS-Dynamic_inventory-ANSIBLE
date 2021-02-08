@@ -1,0 +1,9 @@
+---
+# vars file for provision-ec2
+keypair: MYTASK
+instance_type: t2.micro
+security_group: K8s_cluster
+image: ami-08e0ca9924195beba
+region: ap-south-1
+aws_access_key: AKIASDNQ6QG7GBPTTG73
+aws_secret_key: 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

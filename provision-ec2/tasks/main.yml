@@ -1,0 +1,29 @@
+---
+# tasks file for provision-ec2
+- name: "Launching a ec2 instance (master)" 
+  amazon.aws.ec2:
+    key_name: "{{ keypair }}"
+    region: "{{ region }}"
+    instance_type: "{{ instance_type }}"
+    image: "{{ image }}"
+    wait: yes
+    group: "{{ security_group }}"
+    count: 1
+    instance_tags:
+            db: k8s_master
+    aws_access_key: "{{ aws_access_key }}"
+    aws_secret_key: "{{ aws_secret_key }}"
+- name: "Launching two ec2 instance (slave)"
+  amazon.aws.ec2:
+    key_name: "{{ keypair }}"
+    region: "{{ region }}"
+    instance_type: "{{ instance_type }}"
+    image: "{{ image }}"
+    wait: yes
+    group: "{{ security_group }}"
+    count: 2
+    instance_tags:
+            db: k8s_slave
+    aws_access_key: "{{ aws_access_key }}"
+    aws_secret_key: "{{ aws_secret_key }}"
+
