@@ -1,0 +1,5 @@
+[k8s_Master]
+52.66.245.222 ansible_user=ec2-user ansible_connection=ssh
+
+[k8s_slave]
+13.233.96.160 ansible_user=ec2-user ansible_connection=ssh

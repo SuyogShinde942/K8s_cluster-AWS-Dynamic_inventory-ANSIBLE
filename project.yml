@@ -1,0 +1,7 @@
+- hosts: tag_db_k8s_master
+  roles:
+  - role: k8s-cluster
+
+- hosts: tag_db_k8s_slave
+  roles:
+  - role: k8s-slave
