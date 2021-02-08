@@ -1,0 +1,1 @@
+# K8s_cluster-AWS-Dynamic_inventory-ANSIBLE
