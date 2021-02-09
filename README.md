@@ -61,7 +61,19 @@ To install boto module
 
 > pip3 install boto3
 
+## __To successfully make an API call to AWS, you will need to configure Boto (the Python interface to AWS). There are a variety of methods available, but the simplest is just to export two environment variables:__
 
+>export AWS_ACCESS_KEY_ID='your access key'
+
+>export AWS_SECRET_ACCESS_KEY='your secret key'
+
+## or The second option is to copy the script to /etc/ansible/hosts and chmod +x it. You will also need to copy the ec2.ini file to /etc/ansible/ec2.ini. Then you can run ansible as you would normally.
+
+![6](https://user-images.githubusercontent.com/64534620/107314539-aba7f480-6a49-11eb-8c57-54b3450b1b47.png)
+## We have to only run ec2.py for getting the dynamic inventory.
+## __The script separated the instances according to tags "tag_db_k8s_master" and "tag_db_k8s_slave" and made them a separated host group so we can use them in the playbook.__
+
+# Our dynamic inventory is ready to use.
 
 
 
