@@ -36,7 +36,9 @@ Ansible is the simplest way to automate apps and IT infrastructure. Application 
 
 ![3](https://user-images.githubusercontent.com/64534620/107313205-ecead500-6a46-11eb-8b5a-673f9947cb99.png)
 
-<u>Instead of providing the aws_access_key and aws_secret_key in the playbook, we can configure the AWS CLI and the Ansible will by default use the credentials which we provide while configuring the AWS CLI.</u>
+## __Instead of providing the aws_access_key and aws_secret_key in the playbook, we can configure the AWS CLI and the Ansible will by default use the credentials which we provide while configuring the AWS CLI.__
+
+## __And also used the security group which was created with all inbound and outbound traffic named k8s cluster.  It's not good for security but set for doing this project.__
 
 
 
