@@ -124,6 +124,33 @@ To install boto module
 8. Configuring the Ip tables and refreshing sysctl
 ![smain1](https://user-images.githubusercontent.com/64534620/107315216-173e9180-6a4b-11eb-9dab-f070389f346b.PNG)
 
+The file created for running the role(k8s-slave)
+
+![project](https://user-images.githubusercontent.com/64534620/107315032-ba42db80-6a4a-11eb-9a52-cbb03671594f.PNG)
+
+## Checking if the cluster is working or not :
+### As in the above-created token in master join the slaves
+### Adding this token in both the slaves
+![11](https://user-images.githubusercontent.com/64534620/107316220-0e4ebf80-6a4d-11eb-9631-3fe4144a69e5.png)
+
+### After running "kubectl get nodes" in the Master.
+![13](https://user-images.githubusercontent.com/64534620/107316381-5968d280-6a4d-11eb-85ac-037e6793c88f.png)
+
+### Let's launch a pod on this cluster
+> kubectl create deployment success --image=vimal13/apache-webserver-php
+![14](https://user-images.githubusercontent.com/64534620/107316498-9339d900-6a4d-11eb-96b3-19ee322b40b9.png)
+### Exposing the POD
+> kubectl expose deployments success --type=NodePort --port=80
+
+> kubectl get pods -o wide
+![16](https://user-images.githubusercontent.com/64534620/107316559-b8c6e280-6a4d-11eb-949c-391dad5cca46.png)
+
+## The pod is launched in the first slave
+
+![17](https://user-images.githubusercontent.com/64534620/107316594-cf6d3980-6a4d-11eb-819e-531691e67194.png)
+
+
+
 
 
 
