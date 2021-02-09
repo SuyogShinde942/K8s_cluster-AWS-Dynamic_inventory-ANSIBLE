@@ -83,19 +83,19 @@ To install boto module
 
 ## Steps in the below playbook /k8s-cluster/tasks/main.yml
 
-1.Installing docker and iproute-tc
-2.Configuring the Yum repo for kubernetes
-3.Installing kubeadm,kubelet kubectl program
-4.Enabling the docker and Kubernetes
-5.Pulling the config images
-6.Confuring the docker daemon.json file
-7.Restarting the docker service
-8.Configuring the Ip tables and refreshing sysctl
-9.Starting kubeadm service
-10.Creating .kube Directory
-11.Copying file config file
-12.Installing Addons e.g flannel
-13.Creating the token
+1. Installing docker and iproute-tc
+2. Configuring the Yum repo for kubernetes
+3. Installing kubeadm,kubelet kubectl program
+4. Enabling the docker and Kubernetes
+5. Pulling the config images
+6. Confuring the docker daemon.json file
+7. Restarting the docker service
+8. Configuring the Ip tables and refreshing sysctl
+9. Starting kubeadm service
+10. Creating .kube Directory
+11. Copying file config file
+12. Installing Addons e.g flannel
+13. Creating the token
 
 ![mmain1](https://user-images.githubusercontent.com/64534620/107314921-8cf62d80-6a4a-11eb-8888-39b871e49c39.PNG)
 ![mmain2](https://user-images.githubusercontent.com/64534620/107314926-8d8ec400-6a4a-11eb-9e79-5ee474c77c48.PNG)
@@ -114,14 +114,14 @@ To install boto module
 
 ## Steps in the below playbook /k8s-slave/task/main.yml
 
-1.Installing docker and iproute-tc
-2.Configuring the Yum repo for kubernetes
-3.Installing kubeadm,kubelet kubectl program
-4.Enabling the docker and kubenetes
-5.Pulling the config images
-6.Confuring the docker daemon.json file
-7.Restarting the docker service
-8.Configuring the Ip tables and refreshing sysctl
+1. Installing docker and iproute-tc
+2. Configuring the Yum repo for kubernetes
+3. Installing kubeadm,kubelet kubectl program
+4. Enabling the docker and kubenetes
+5. Pulling the config images
+6. Confuring the docker daemon.json file
+7. Restarting the docker service
+8. Configuring the Ip tables and refreshing sysctl
 ![smain1](https://user-images.githubusercontent.com/64534620/107315216-173e9180-6a4b-11eb-9dab-f070389f346b.PNG)
 
 
