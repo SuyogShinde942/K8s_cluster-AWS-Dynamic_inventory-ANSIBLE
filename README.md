@@ -12,10 +12,10 @@ Kubernetes, also known as K8s, is an open-source system for automating deploymen
 Ansible is the simplest way to automate apps and IT infrastructure. Application Deployment + Configuration Management + Continuous Delivery.
 
 # START
-# In this article, I am going to configure a K8s Cluster on AWS, Ec-2 instances with a tool for automation called ansible. Also with a dynamic inventory.
+# I am going to configure a K8s Cluster on AWS, Ec-2 instances with a tool for automation called ansible. Also with a dynamic inventory.
 
 ## Why dynamic inventory?
-### For example, Aws default provides a dynamic IP so, after every restart, it's assigned to a new IP, or we launch a new O.S in a region called ap-south-1 and we need to use all the container as the database from that region and suppose there are 100 servers, Instead of putting it manually in the inventory there is a python script that works as a dynamic inventory which divides the instances with tags, region, subnets, etc.
+#### For example, Aws default provides a dynamic IP so, after every restart, it's assigned to a new IP, or we launch a new O.S in a region called ap-south-1 and we need to use all the container as the database from that region and suppose there are 100 servers, Instead of putting it manually in the inventory there is a python script that works as a dynamic inventory which divides the instances with tags, region, subnets, etc.
 
 # __First, let's start with provisioning of Ec-2 instances with ansible__
 ### Creating an Ansible role called provision-ec2
