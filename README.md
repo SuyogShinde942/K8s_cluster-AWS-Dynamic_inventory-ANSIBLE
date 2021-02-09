@@ -56,8 +56,9 @@ https://raw.githubusercontent.com/ansible/ansible/stable-1.9/plugins/inventory/e
 https://raw.githubusercontent.com/ansible/ansible/stable-1.9/plugins/inventory/ec2.ini ---- ec2.ini
 
 ## Pre-requisites for these scripts are installing boto and boto3 in the system where you are running the program.
-To install boto
+To install boto module
 > pip3 install boto
+
 > pip3 install boto3
 
 
