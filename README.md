@@ -20,7 +20,7 @@ Ansible is the simplest way to automate apps and IT infrastructure. Application 
 # __First, let's start with provisioning of Ec-2 instances with ansible__
 ### Creating an Ansible role called provision-ec2
 
-![GitHub Logo](I:\ARTH\Kubernetes\Tassk\Task19\Images\carbon.sh\mmain1.PNG)
+![Screenshot (311)](https://user-images.githubusercontent.com/64534620/107312833-2ec74b80-6a46-11eb-83c9-ec1f705aa10e.png)
 
 
 
