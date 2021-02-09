@@ -75,9 +75,54 @@ To install boto module
 
 # Our dynamic inventory is ready to use.
 
+## Let's, Create a role for configuring the k8s master.
+> ansible-galaxy init k8s-cluster
 
+### In the k8s-cluster/vars/main.yml file
+![var1](https://user-images.githubusercontent.com/64534620/107314768-3f79c080-6a4a-11eb-88b9-97c039a41336.PNG)
 
+## Steps in the below playbook /k8s-cluster/tasks/main.yml
 
+1.Installing docker and iproute-tc
+2.Configuring the Yum repo for kubernetes
+3.Installing kubeadm,kubelet kubectl program
+4.Enabling the docker and Kubernetes
+5.Pulling the config images
+6.Confuring the docker daemon.json file
+7.Restarting the docker service
+8.Configuring the Ip tables and refreshing sysctl
+9.Starting kubeadm service
+10.Creating .kube Directory
+11.Copying file config file
+12.Installing Addons e.g flannel
+13.Creating the token
+
+![mmain1](https://user-images.githubusercontent.com/64534620/107314921-8cf62d80-6a4a-11eb-8888-39b871e49c39.PNG)
+![mmain2](https://user-images.githubusercontent.com/64534620/107314926-8d8ec400-6a4a-11eb-9e79-5ee474c77c48.PNG)
+
+### The file created for running the role(k8s-cluster)
+
+![project](https://user-images.githubusercontent.com/64534620/107315032-ba42db80-6a4a-11eb-9a52-cbb03671594f.PNG)
+
+## Let's, Configure the slave on the other two ec-2 instances.
+### Create a role k8s-slave
+> ansible-galaxy init k8s-slave
+
+### In /k8s-slave/vars/main.yml
+
+![var1](https://user-images.githubusercontent.com/64534620/107314768-3f79c080-6a4a-11eb-88b9-97c039a41336.PNG)
+
+## Steps in the below playbook /k8s-slave/task/main.yml
+
+1.Installing docker and iproute-tc
+2.Configuring the Yum repo for kubernetes
+3.Installing kubeadm,kubelet kubectl program
+4.Enabling the docker and kubenetes
+5.Pulling the config images
+6.Confuring the docker daemon.json file
+7.Restarting the docker service
+8.Configuring the Ip tables and refreshing sysctl
+![smain1](https://user-images.githubusercontent.com/64534620/107315216-173e9180-6a4b-11eb-9dab-f070389f346b.PNG)
 
 
 
